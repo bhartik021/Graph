@@ -8,7 +8,7 @@ class Solution {
     void depthFirstSearch(int node, vector<int> adj[], int visited[], vector<int>&dfs) {
         visited[node] = 1;
         dfs.push_back(node);
-        // traverse all its neighbours
+        // traverse all its neighbors
         for(auto it : adj[node]) {
             if(!visited[it]) {
                 depthFirstSearch(it, adj, visited, dfs);
