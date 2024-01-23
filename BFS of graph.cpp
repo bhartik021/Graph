@@ -1,7 +1,5 @@
 //{ Driver Code Starts
-#include<iostream>
-#include<vector>
-#include<queue>
+#include <bits/stdc++.h>
 using namespace std;
 
 // } Driver Code Ends
@@ -10,10 +8,7 @@ class Solution {
     // Function to return Breadth First Traversal of given graph.
     vector<int> bfsOfGraph(int V, vector<int> adj[]) {
         // Code here
-        int* visited = new int[V];
-        for(int i= 0; i < V; i++) {
-            visited[i] = 0;
-        }
+        int visited[V] = {0};
         visited[0] = 1;
         queue<int>q;
         q.push(0);
@@ -40,7 +35,9 @@ int main() {
     cin >> tc;
     while (tc--) {
         int V, E;
-        cin >> V >> E;
+        cin >> V >>
+
+            E;
 
         vector<int> adj[V];
 
