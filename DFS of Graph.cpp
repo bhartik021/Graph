@@ -1,6 +1,5 @@
 //{ Driver Code Starts
-#include<iostream>
-#include<vector>
+#include <bits/stdc++.h>
 using namespace std;
 
 // } Driver Code Ends
@@ -21,10 +20,7 @@ class Solution {
     // Function to return a list containing the DFS traversal of the graph.
     vector<int> dfsOfGraph(int V, vector<int> adj[]) {
         // Code here
-        int* visited = new int[V];
-        for(int i= 0; i < V; i++) {
-            visited[i] = 0;
-        }
+        int visited[V] = {0};
         int start = 0;
         vector<int>dfs;
         depthFirstSearch(start, adj, visited, dfs);
